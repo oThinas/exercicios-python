@@ -1,6 +1,3 @@
-import string
-
-
 nome = input('Digite seu nome: ')
 cpf = input('Digite seu CPF: ')
 idade = int(input('Digite sua idade: '))
