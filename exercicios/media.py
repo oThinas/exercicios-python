@@ -9,4 +9,3 @@ else:
     situacao = 'REPROVADO'
 
 print('Sua média é', media, 'e você está', situacao)
-#modificação teste
