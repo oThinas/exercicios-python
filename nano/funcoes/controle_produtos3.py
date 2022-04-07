@@ -43,7 +43,7 @@ def excluirProduto(lista):
         if serial == item[2]:
             lista.remove(item)
             break
-    return 'Produto excluído' 
+    
 
 def exibirValores(lista):
     valores = []
@@ -55,3 +55,4 @@ def exibirValores(lista):
         print('O equipamento mais caro custa:', max(valores))
         print('O equipamento mais barato custa:', min(valores))
         print('O preço do inventário é de:', sum(valores))
+        print('------------------')
