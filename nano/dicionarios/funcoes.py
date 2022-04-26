@@ -1,6 +1,6 @@
 def perguntar():
     opcao = input('O que deseja realizar?' + 
-              '\n(i) - Inserir um usuário' + 
+              '\n(i) - Inserir ou atualizar um usuário' + 
               '\n(p) - Pesquisar um usuário' + 
               '\n(e) - Excluir um usuário' +
               '\n(l) - Listar usuários' +
@@ -41,6 +41,6 @@ def listar(usuarios):
     print('Listando...')
     print('---------------')
     for chave, dadosUsuario in usuarios.items():
-        # print('Login:', chave, '= Nome:', usuarios.get(chave)[0], 'Último acesso no dia:', usuarios.get(chave)[1], 'Última estação acessada:', usuarios.get(chave)[2]) # Não funciona, porque um dicionário é uma lista dentro de uma lista, então precisamos de dois parâmetros iniciais no for.
+        # print('Login:', chave, '= Nome:', usuarios.get(chave)[0], 'Último acesso no dia:', usuarios.get(chave)[1], 'Última estação acessada:', usuarios.get(chave)[2]) # Não funciona, porque o método items() retorna: ['Enrico Flores', '03/06/2017', 'RaioX02'].
         print('Login:', chave, '=', dadosUsuario)
         print('---------------')
