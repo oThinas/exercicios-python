@@ -1,4 +1,4 @@
-# Crie um programa que receba como entrada o crédito e depois o preço de itens comprados por  esse  cliente.  O  programa  deverá  parar de solicitar novos preços quando o crédito disponível for insuficiente para pagar por um deles. Ao final exiba o total da compra e o crédito restante.
+# Crie um programa que receba como entrada o crédito e depois o preço de itens comprados por  esse  cliente.  O  programa  deverá  parar de solicitar novos preços quando o crédito disponível for insuficiente para pagar por um deles. Ao final exiba o total da compra e o crédito restante
 i = 0
 precoTotal = 0
 credito = float(input('Crédito disponível: '))

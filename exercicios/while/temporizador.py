@@ -1,5 +1,7 @@
 from time import sleep
+import os
 
+clear = lambda: os.system('cls')
 horaAlarme = int(input("Hora: "))
 minutoAlarme = int(input("Minuto: "))
 segundoAlarme = int(input("Segundo: "))
@@ -12,6 +14,7 @@ while hora < 24:
         while segundo < 60:
             print(f'{hora:02}:{minuto:02}:{segundo:02}')
             sleep(1)
+            clear()
             if hora == horaAlarme and minuto == minutoAlarme and segundo == segundoAlarme:
                 print("BIP-BIP")
                 break
