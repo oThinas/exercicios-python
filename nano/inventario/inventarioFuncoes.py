@@ -16,7 +16,7 @@ def registrarItem():
     op = input('Digite [s] para mais itens.\n').upper()
     
 def incluirItem():
-  if verificarInventarioVazio():
+  if inventario == {}:
     return
   
   with open(f'{local}inventario.csv', 'a') as documento:
