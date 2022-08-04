@@ -31,8 +31,7 @@ def descontarProduto(lista, porc):
     for item in lista:
         if nome == item[0]:
             print('Valor antigo:', item[1])
-            # item[1] *= 0.9
-            item[1] *= (1 - porc / 100)
+            item[1] *= (porc / 100)
             print('Valor novo:', item[1])
             break
         
@@ -56,3 +55,6 @@ def exibirValores(lista):
         print('O equipamento mais barato custa:', min(valores))
         print('O preço do inventário é de:', sum(valores))
         print('------------------')
+        
+def printLinha():
+    print('-' * 40)
