@@ -152,3 +152,19 @@ def cityAverage(salaries, sons):
   
   return [salaryAverage, sonAverage, salaryBiggest, salaryLessThan350Count]
 
+# 16. Faça uma função que recebe, por parâmetro, um valor inteiro e positivo e retorna o número de divisores desse valor.
+def foundDividers(number):
+  dividers = [0]
+  for previousNumber in range(1, number + 1):
+    if number % previousNumber == 0:
+      dividers.append(previousNumber)
+  return dividers
+    
+# 17. Escreva uma função que recebe, por parâmetro, dois valores X e Z e calcula e retorna XZ (sem utilizar funções ou operadores de potência prontos).
+def functionPow(x, z):
+  result = 1
+  i = 0
+  while i < z:
+    result *= x
+    i += 1
+  return result
