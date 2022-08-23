@@ -113,3 +113,42 @@ def categorizeSwimmer(age):
     return 'Juvenil B'
   else:
     return 'Adulto'
+
+# 13. Faça  uma  função  que  recebe  a  média  final  de  um  aluno  por  parãmetro  e  retorna  o  seu conceito, conforme a tabela abaixo:
+#      Nota     | Conceito
+#  de 0.0 a 4.9 |    D
+#  de 5.0 a 6.9 |    C
+#  de 7.0 a 8.9 |    B
+# de 9.0 a 10.0 |    A
+def score(average):
+  if average >= 0 and average <= 4.9:
+    return 'D'
+  elif average >= 5 and average <= 6.9:
+    return 'C'
+  elif average >= 7 and average <= 8.9:
+    return 'B'
+  elif average >= 9 and average <= 10.0:
+    return 'A'
+
+# 14. Faça uma função que recebe, por parâmetro, a altura (alt) e o sexo de uma pessoa, e retorna o seu  peso  ideal.  Para  homens,  calcular  o  peso  ideal  usando  a  fórmula:  P  =  72,7.alt  -  58.  Para mulheres, utilize a fórmula: P = 62,1.alt – 44,7.
+def idealWeight(height, gender: 'male' or 'female'):
+  if gender == 'male':
+    return 72.7 * height - 58
+  elif gender == 'female':
+    return 62.1 * height - 44.7
+  else:
+    return 'Gênero não esperado'
+
+# 15. A prefeitura de uma cidade fez uma pesquisa entre os seus habitantes, coletando dados sobre o salário  e  número  de  filhos.  Faça  uma  função  que  leia  esses  dados  para  um  número  não determinado  de  pessoas  e  retorne  a  média  de  salário  da  população,  a  média  do  número  de filhos, o maior salário e o percentual de pessoas com salário até R$350,00.
+def cityAverage(salaries, sons):
+  salaryAverage = sum(salaries) / len(salaries)
+  sonAverage = sum(sons) / len(sons)
+  salaryBiggest = max(salaries)
+  
+  salaryLessThan350Count = 0
+  for salary in salaries:
+    if salary <= 350:
+      salaryLessThan350Count += 1
+  
+  return [salaryAverage, sonAverage, salaryBiggest, salaryLessThan350Count]
+
